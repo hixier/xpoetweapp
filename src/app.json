@@ -1,0 +1,43 @@
+{
+  "pages": [
+    "pages/index/index",
+    "pages/logs/logs",
+    "pages/menulist/menulist",
+    "pages/mode/mode",
+    "pages/option/option",
+    "pages/state/state",
+    "pages/function/function",
+    "pages/productManagement/productManagement",
+    "pages/bluetooth/bluetooth"
+  ],
+  "window": {
+    "backgroundTextStyle": "light",
+    "navigationBarBackgroundColor": "#fff",
+    "navigationBarTitleText": "WeChat",
+    "navigationBarTextStyle": "black"
+  },
+  "usingComponents": {
+    "van-button": "dist/button/index",
+    "van-cell": "dist/cell/index",
+    "van-cell-group": "dist/cell-group/index",
+    "van-row": "dist/row/index",
+    "van-col": "dist/col/index",
+    "van-image": "dist/image/index",
+    "van-nav-bar": "dist/nav-bar/index",
+    "van-icon": "dist/icon/index",
+    "van-divider": "dist/divider/index",
+    "van-grid": "dist/grid/index",
+    "van-grid-item": "dist/grid-item/index",
+    "van-action-sheet": "dist/action-sheet/index",
+    "van-field": "dist/field/index",
+    "van-slider": "dist/slider/index",
+    "van-stepper": "dist/stepper/index",
+    "van-toast": "dist/toast/index",
+    "van-switch": "dist/switch/index",
+    "van-dropdown-menu": "dist/dropdown-menu/index",
+    "van-dropdown-item": "dist/dropdown-item/index",
+    "van-icon": "dist/icon/index"
+
+  },
+  "sitemapLocation": "sitemap.json"
+}

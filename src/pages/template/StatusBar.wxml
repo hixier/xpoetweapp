@@ -1,0 +1,10 @@
+<template name="Bottomstatusbar">
+    <view class="Bottomstatusbar">
+
+    </view>
+</template>
+
+
+<template name="Topstatusbar">
+    <view style="position:fixed;top:0;">1111</view>
+</template>

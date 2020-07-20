@@ -1,0 +1,31 @@
+/* pages/option/option.wxss */
+
+.top{
+    height:80rpx;
+}
+
+.main-container{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.option-container{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 800rpx;
+}
+
+.level-container{
+    display: flex;
+    justify-content: space-between;
+}
+
+van-slider {
+    margin: 2rpx;
+}
+
+label{
+    margin: 2rpx;
+}

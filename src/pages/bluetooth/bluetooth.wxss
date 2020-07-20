@@ -1,0 +1,5 @@
+/* pages/bluetooth/bluetooth.wxss */
+
+.send-field{
+    border: font 10;
+}

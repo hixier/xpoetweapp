@@ -1,0 +1,65 @@
+<!--pages/option/option.wxml-->
+<import src="../template/StatusBar.wxml"></import>
+
+<view class="top">
+        <template is="Topstatusbar"></template>
+    </view>
+<view class="main-container">
+    
+    <view class="option-container">
+        <view class="damp-container">
+            <van-row>
+            <label ><text>曲膝抵抗</text> </label>
+            <view class="level-container">
+            <van-button round type='info' bind:click="dampButton_onClick">复位</van-button>
+            <van-stepper 
+            value="{{damp_value}}"
+            async-change
+            bind:change="dampStepper_onChange"
+            ></van-stepper>
+            </view>
+            <van-slider 
+            id="damp_slider" value="{{damp_value}}" bind:change="dampSlider_onChange" />
+            </van-row>
+        </view>
+
+        <view class="stand-container">
+            <van-row>
+            
+            <label><text>立体功能</text></label>
+            <view class="level-container">
+            <van-button round type='info' bind:click="standButton_onClick">复位</van-button>
+            <van-switch checked='{{stand_checked}}' bind:change='standSwitch_onChecked' />
+            </view>
+            
+            <van-slider 
+            id="stand_slider" 
+            min="0" max='1' step="1"
+            value="{{stand_value}}" bind:change="standSlider_onChange" />
+            </van-row>
+        </view>
+
+        <view class="sound-container">
+            <van-row>
+            
+            <label><text>音量</text></label>
+            <view class="level-container">
+            <van-button round type='info' bind:click="soundButton_onClick">静音</van-button>
+            <van-stepper 
+            min='0' max='5'
+            value="{{sound_value}}"
+            async-change
+            bind:change="soundStepper_onChange"
+            ></van-stepper>
+            </view>
+            <view class="slider-container">
+                <van-slider 
+                id="sound_slider" 
+                min = '0' max='5'
+                value="{{sound_value}}" bind:change="soundSlider_onChange" />
+            </view>
+            </van-row>
+        </view>
+        
+    </view>
+</view>

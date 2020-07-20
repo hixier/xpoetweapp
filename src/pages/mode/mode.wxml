@@ -1,0 +1,20 @@
+<!--pages/mode/mode.wxml-->
+<view class="top-nav" block>
+        <van-icon name="bars" size='40rpx'/>
+        <van-divider  
+          customStyle="color:#1989fa;border-color:#1989fa;margin:5px" />
+          <text>leg</text>
+    </view>
+    <van-divider 
+    customStyle="color:#000000;border-color:#000000;margin:5px" />
+<view class="mode-container">
+    <van-grid column-num="2" border="{{ false }}">
+  <van-grid-item use-slot wx:for="{{ mode.texts }}" wx:for-item="index">
+    <image
+      style="width: 100%; height: 150rpx;"
+      text="{{mode.texts[index]}}"
+      src="{{mode.images[index]}}"
+    />
+  </van-grid-item>
+</van-grid>
+</view>

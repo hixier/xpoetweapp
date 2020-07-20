@@ -1,0 +1,40 @@
+<!--pages/bluetooth/bluetooth.wxml-->
+
+<view class="blue-container">
+    <view class="deviceInfo" >
+        <view>
+        <van-button bind:click='SearchButton_onClick'>搜索蓝牙</van-button>
+        <label><text>{{deviceInfo}}</text></label>
+        <van-dropdown-menu>
+            <van-dropdown-item value="{{ value1 }}" options="{{ option1 }}" />
+        </van-dropdown-menu>
+        </view>
+        <view >
+        <van-button>连接</van-button>
+        <van-button>断开链接</van-button>
+        </view>
+        <van-action-sheet
+            show="{{ show }}"
+            actions="{{ actions }}"
+            bind:close="onServiceClose"
+            bind:select="onServiceSelect"
+            />
+    </view>
+    <view class="data-container" style="height:{{editorHeight}}px;">
+        <text>接收数据：</text>
+        <editor id="editor" class="ql-container" placeholder="{{placeholder}}" bindstatuschange="onStatusChange" bindready="onEditorReady">
+        </editor>
+        <van-field 
+            id="send-field"
+            class="send-field"
+            value="{{sendValue}}"
+            border="{{ true }}"
+            bind:change="onChangeSendField"
+        ></van-field>
+        <van-button >发送</van-button>
+        
+    </view>
+    
+        
+    
+</view>

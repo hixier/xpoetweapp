@@ -1,0 +1,55 @@
+<!--pages/menulist/menulist.wxml-->
+<view class="container">
+    <view class="list">
+    <view class="cell">
+        <van-cell-group title="假肢型号" >
+            <van-cell 
+            is-link
+            title="活动"
+            link-type="navigateTo"
+            url='../mode/mode'
+            size='large'></van-cell>
+            <van-cell 
+            is-link
+            title="功能"
+            link-type="navigateTo"
+            url='../function/function'
+            size='large'></van-cell>
+            <van-cell 
+            is-link
+            title="选项"
+            link-type="navigateTo"
+            url='../option/option'
+            size='large'></van-cell>
+            <van-cell 
+            is-link
+            title="状态"
+            link-type="navigateTo"
+            url='../state/state'
+            size='large'></van-cell>
+            <van-cell 
+            is-link
+            title="蓝牙测试页"
+            link-type="navigateTo"
+            url='../bluetooth/bluetooth'
+            size='large'></van-cell>
+        </van-cell-group>
+        </view>
+
+        <van-cell-group title="产品概要">
+            <van-cell 
+            is-link
+            title="零件管理"
+            link-type="navigateTo"
+            url='../productManagement/productManagement'
+            size='large'></van-cell>
+            <van-cell 
+            is-link
+            title="法律信息"
+            link-type="navigateTo"
+            url=''
+            size='large'
+            ></van-cell>
+        </van-cell-group>
+    </view>
+</view>
